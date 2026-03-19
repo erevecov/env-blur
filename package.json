@@ -1,0 +1,83 @@
+{
+  "name": "env-blur",
+  "displayName": "Env Blur",
+  "description": "Blur .env file values to protect sensitive data during screen sharing or recording. Click to reveal.",
+  "version": "0.1.0",
+  "publisher": "erevecov",
+  "author": {
+    "name": "erevecov",
+    "url": "https://github.com/erevecov"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erevecov/env-blur"
+  },
+  "bugs": {
+    "url": "https://github.com/erevecov/env-blur/issues"
+  },
+  "homepage": "https://github.com/erevecov/env-blur#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "env",
+    "blur",
+    "dotenv",
+    "security",
+    "privacy",
+    "screen-sharing",
+    "sensitive-data",
+    "environment-variables"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onLanguage:dotenv",
+    "onLanguage:properties",
+    "workspaceContains:**/.env*",
+    "workspaceContains:**/env",
+    "workspaceContains:**/env.*",
+    "workspaceContains:**/*.env",
+    "workspaceContains:**/.envrc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "env-blur.toggle",
+        "title": "Env Blur: Toggle"
+      }
+    ],
+    "configuration": {
+      "title": "Env Blur",
+      "properties": {
+        "env-blur.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable env value blurring"
+        },
+        "env-blur.blurColor": {
+          "type": "string",
+          "default": "#808080",
+          "description": "Background color used for the blur overlay"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.3.0"
+  }
+}
