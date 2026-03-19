@@ -1,5 +1,5 @@
 {
-  "name": "env-blur",
+  "name": "env-blur-protect",
   "displayName": "Env Blur",
   "description": "Blur .env file values to protect sensitive data during screen sharing or recording. Click to reveal.",
   "version": "0.1.0",
