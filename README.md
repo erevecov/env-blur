@@ -35,7 +35,7 @@
 
 Search for **"Env Blur"** in the Extensions sidebar, or install from:
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=erevecov.env-blur-protect)
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=eduardorevecovillalobos.env-blur-protect)
 - [Open VSX Registry](https://open-vsx.org/extension/eduardorevecovillalobos/env-blur-protect)
 
 ### Manual
